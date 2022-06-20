@@ -1,0 +1,38 @@
+body{
+    background-color: white;
+    
+}
+
+.small{
+    width: 14rem;
+    height: 10rem;
+    margin-left: 1rem;
+}
+
+.register{
+    margin-top: 1%;
+    width: 40%;
+    height: 30rem;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 8%;
+    padding: 2rem;
+    padding-top: 1rem !important;
+    background: white;
+
+}
+
+.login{
+    margin-top: 7%;
+    width: 40%;
+    height: 22rem;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 8%;
+    padding: 2rem;
+    padding-top: 1rem !important;
+    background: white;
+
+}
+
+.text{
+    color:rgb(144, 143, 143)
+}

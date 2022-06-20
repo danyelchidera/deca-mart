@@ -1,0 +1,46 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+item_page
+{% endblock %}
+
+{% block content%}
+
+<div class="center">
+    <div class="child right-child">
+        <img src="/static/media/{{item.file_name}}" alt="sneakers" class="displayImage" />
+
+        <div class="sampleImages mt-1">
+            <img src="/static/media/{{item.file_name}}" alt="sneakers" class="actualSampleImages" />
+            <img src="/static/media/{{item.file_name}}" alt="sneakers" class="actualSampleImages" />
+            <img src="/static/media/{{item.file_name}}" alt="sneakers" class="actualSampleImages" />
+            <img src="/static/media/{{item.file_name}}" alt="sneakers" class="actualSampleImages" />
+        </div>
+    </div>
+    <div class="child left-child">
+        <p class="sc" style=" margin-top: 10px;
+        color: rgb(255, 0, 0);
+        font-size: 20px;"><b>Deca Mart<b></p>
+
+        <span class="fl"><b>{{item.title}}</b></span>
+
+        <p class="faint pt">
+            {{item.description}}
+        </p>
+
+        <div class="parent">
+            <div class="price"><b>${{item.price}}</b></div>
+            <div class="bg">50%</div>
+        </div>
+        <span class="faint strike">$250</span>
+        <div class="buttons">
+            <form method="POST">
+                <input type="text" name="itemId" value="{{item.id}}" hidden>
+                <button class="cart-button text-white" type="submit">Add to cart</button>
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+{% endblock %}
